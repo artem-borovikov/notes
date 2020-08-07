@@ -35,7 +35,35 @@ process.nextTick(() => {
 Порядок исполнения:
 * setTimeout
 * setInterval
+* callbacks
+* idle, prepare
+* poll - возвращение данных из операционной системы, устройств ввода и вывода
 * setImmediate
+* close callbacks
 
 .ref и .unref - ручное управление таймером. .ref - ожидание .unref - мгновенное выполнение.
 .enroll(timer, 1000) - активация таймера, timer.active(timer) - активация.
+
+## EventEmitter
+
+Событие с коллбэком и именем события. Абстракция, шина событий.
+Пример:
+
+```code 
+const emitter = () => {
+  const events = {};
+  return {
+    on: (name, fn) => {
+      const event = events[name];
+      if (event) event.push(fn);
+      else events[name] = [fn];
+    },
+    emit: (name, ...date) => {
+      const event = events[name];
+      if (event) event.forEach(fn => fn(...data));
+    }
+  }
+}
+
+
+```
