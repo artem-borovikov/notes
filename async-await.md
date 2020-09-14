@@ -8,3 +8,22 @@ async function () {
   return 1;
 }
 ```
+## Асинхронные конструкторы
+```code
+class Coming {
+  constructor() {
+    return new Promise(resolve => setTimeout() => {
+      resolve(this);
+    }, DAY_OF_JUDGMENT - Date.now());
+  }
+}
+
+// функцию, которая возвращает промис, тоже можно вызывать через await
+(async () => {
+  const secondComing = await new Coming();
+  console.dir(secondComing);
+})()
+
+```
+
+
