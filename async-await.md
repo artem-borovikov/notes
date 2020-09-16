@@ -1,6 +1,6 @@
 # Async / Await
 
-Если такая функция вызывается без await, то возвращается заресолвленный или нет промис.
+Если такая функция вызывается без await, то возвращается заресолвленный или нет промис. Awaut распаковывает промисы и ждет, пока они не заресолвятся.
 
 ```code
 async function () {
@@ -34,4 +34,37 @@ const a = await 10;
 
 ```
 
+## Асинхронные итерации
+
+```code
+
+const range = {
+  start: 1,
+  end: 10,
+  [Symbol.asyncIterator]() {
+    let value = this.start;
+    return {
+      next: () => new Promise(resolve => {
+        setTimeout(() => {
+          resolve({
+            value,
+            done: value++ === this.end + 1
+          });
+        }, 0);
+      })
+    };
+  }
+};
+
+console.dir({ range });
+
+(async () => {
+
+  for await (const number of range) {
+    console.log(number);
+  }
+
+})();
+
+```
 
