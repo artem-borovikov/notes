@@ -12,7 +12,7 @@ process.on('rejectionHandled', promise => {
   console.log({ rejectionHandled: { promise }})
 });
 
-// когда более чем один resolve()
+// когда более чем один resolve() или reject()
 
 process.on('multipleResolves', (type, promise, reason) => {
   console.log({ multipleResolves: { type, promise, reason }});
