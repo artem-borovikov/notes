@@ -37,6 +37,10 @@ cb(15);
 const INIT_VALUE = 15;
 cb(INIT_VALUE);
 
+// исключения - счетчики, -1
+
+i++;
+
 
 ```
 5. Магические строки. 
@@ -50,4 +54,17 @@ const pos = (row, col) => `\x1b[${row}:${col}H`;
 
 
 ```
+6. Хардкод
+```code
+
+const data = await fs.readFile('file.js', 'utf8');
+const lines = data.split('\n');
+const str = lines[6];
+const fileName = str.substring(34,56);
+
+
+
+
+```
+
 
