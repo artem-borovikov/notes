@@ -15,4 +15,16 @@ name = 'config.js';
 const file = 'config.js';
 const fileName = 'config.js';
 
+// одни и те же имена
+const obj = {
+ setPassword: () => {},
+ assignLogin: () => {}
+
+};
+
+// непрезентабельное имя
+const obj1 = {
+ exec: (handler) => handler()
+};
+
 ```
