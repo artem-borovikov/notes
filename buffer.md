@@ -9,7 +9,7 @@
   console.log(b1);
   
   // не очищенный кусок пямяти, выше скорость
-  const b2 = Bugger.alloUnsafe(1024);
+  const b2 = Bugger.allocUnsafe(1024);
   console.log(b2)
   
   // создание буффера из массива или из строки
