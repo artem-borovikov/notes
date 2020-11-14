@@ -17,5 +17,18 @@ fs.lstat() - дает информацию о файле в зависимост
   fs.watch('путь к файлу', (event, file) => {
     console.log('Файл изменен');
   });
+```
+Работа с файлами через промисы и стримы.
+
+```javascript
+ const main = async () => {
+  const stream = fs.createReadStream('путь к файлу','utf8');
+  for await (const chunk of stream) {
+    console.log(chunk);
+  }
+  
+  const data = await fs.promises.readFile('путь к файлу','utf8');
+  console.log(data);
+ }
 
 ```
