@@ -1,0 +1,10 @@
+## Частичное применение функции в JS
+
+```javascript
+   const fn = (x, y) => x * y;
+   
+   // bind - прикрепление контекста + примем неограниченного числа аргументов
+   const test = fn.bind(this, 2);
+   console.log(test(2)); //outputs 4
+
+```
