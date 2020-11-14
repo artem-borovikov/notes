@@ -21,4 +21,12 @@
   // можно выводить в разном формате
   console.log(b.toString('hex')); // base64, utf8, binary
   
+  // можно сложить буфферы
+  
+  // заполнение буффера буквой А
+  const b5 = Buffer.alloc(10).fill('A');
+  
+  // конкатенация буфферов
+  Buffer.concat(b3,b5);
+  
 ```
