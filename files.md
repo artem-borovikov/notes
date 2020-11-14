@@ -10,3 +10,12 @@ fs.lstat() - дает информацию о файле в зависимост
 ```javascript
   fn.bind(null, arg);
 ```
+
+Слежка за изменением файла.
+
+```javascript
+  fs.watch('путь к файлу', (event, file) => {
+    console.log('Файл изменен');
+  });
+
+```
