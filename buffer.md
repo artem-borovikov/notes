@@ -29,4 +29,26 @@
   // конкатенация буфферов
   Buffer.concat(b3,b5);
   
+ 
+  // другие методы
+  const b6 = Buffer.from('test');
+  
+  b6.includes('t');  // поиск подстроки
+  b6.indexOf('e'); // позиция подстроки
+  b6.slice(3,6); // мы можем вырезать кусок
+  
+  // итерация по буфферу
+  for (const char of b6.values()) {
+    log(char)
+  }
+  
+  for (const [index, code] of buffer.entries()) {
+    const char = String.fromCharCode(code);
+    console.log({
+      index, 
+      code, 
+      char
+    });
+  }
+  
 ```
