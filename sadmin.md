@@ -44,6 +44,6 @@
 
 cp - копирование файлов
 ```bash
-  cp file1 file2 dir1; // скопировать file1, file2 в папку dir1
+  cp file1 file2 dir1; # скопировать file1, file2 в папку dir1
 
 ```
