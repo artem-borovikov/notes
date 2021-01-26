@@ -99,3 +99,11 @@ which ls;
 help cd;
 
 ```
+
+## man 
+
+Справочник по команде. 
+
+```bash
+man ls;
+```
