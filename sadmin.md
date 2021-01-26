@@ -107,3 +107,11 @@ cd --help;
 ```bash
 man ls;
 ```
+
+## apropos
+
+Поиск схожих значений в мануалах.
+
+```bash
+apopos test;
+```
