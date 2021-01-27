@@ -115,3 +115,11 @@ man ls;
 ```bash
 apopos test;
 ```
+
+## whatis
+
+Вывод краткого описания команды.
+
+```bash
+ whatis touch;
+```
