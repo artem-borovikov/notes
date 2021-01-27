@@ -123,3 +123,12 @@ apopos test;
 ```bash
  whatis touch;
 ```
+
+## info 
+
+Вывод описания программы. С ссылками на другие узлы.
+
+```bash
+
+ info ls;
+```
