@@ -132,3 +132,21 @@ apopos test;
 
  info ls;
 ```
+
+## alias
+
+Создание собственной команды.
+
+```bash
+alias foo='cd ..';
+
+```
+
+## unalias
+
+Удаление алиаса.
+
+```bash
+
+unalias foo;
+```
