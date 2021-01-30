@@ -150,3 +150,12 @@ alias foo='cd ..';
 
 unalias foo;
 ```
+
+## >
+
+Перенаправление вывода.
+
+```bash
+ls -l > text.txt;
+
+```
