@@ -450,3 +450,8 @@ umask 0007;
 sudo su -l; 
 
 ```
+Включение суперюзера в Ubuntu.
+```bash
+sudo -i;
+
+```
