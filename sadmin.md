@@ -470,4 +470,14 @@ sudo -i;
 sudo service postgresql start;
 ```
 
+## Chown
 
+Для определения владельцев файла нужно использовать команду chown. 
+
+
+```bash
+
+sudo chown root:root test.txt;
+sudo chown <user>:<user-group> <file>;
+
+```
