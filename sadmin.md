@@ -481,3 +481,14 @@ sudo chown root:root test.txt;
 sudo chown <user>:<user-group> <file>;
 
 ```
+
+## passwd
+
+Смена пароля.
+
+```bash 
+
+passwd;
+passwd <user name>;
+
+```
