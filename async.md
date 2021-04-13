@@ -47,6 +47,13 @@ Promise.all([])
 ## async/await
 
 Функции объявляются ключевым словом. Если функция возвращает значение, оно автоматически оборачивается в Promise.resolve() или в Promise.reject().
+На асинхронную функцию можно повесить catch();
+
+```
+   async fn() {}
+   fn().catch(console.log);
+
+```
 
 ## Functor + Chaining + composition
 
